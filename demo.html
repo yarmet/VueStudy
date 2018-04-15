@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+    <h1 v-show="message !== ''">
+        {{title.substring(0, title.length-1)}}<span class="text-danger">{{title.substring(title.length-1, title.length)}}</span>
+    </h1>
+
+    <div>
+        <button class="btn" v-bind:class="{'btn-danger' : danger}" v-if="showBtn"  v-on:click="showBtn = !showBtn" >button</button>
+        <button class="btn" v-bind:class="{'btn-danger' : danger}" v-else="showBtn"  >alternative button</button>
+    </div>
+
+    <ul>
+        <li v-for="item in items">{{item}}</li>
+    </ul>
+
+
+    <div>
+
+    <p>{{message}}</p>
+    <input type="text" v-model="message" @keyup.enter="message='clicked enter'"  >
+    </div>
+
+</div>
+
+<script src="demo.js"></script>
+</body>
+</html>
