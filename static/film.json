@@ -1,0 +1,27 @@
+{
+  "id": "10",
+  "title": "салют-11",
+  "description": "фильм про салют",
+  "actors": [
+    {
+      "id": 1,
+      "name": "skarlet iohanson1"
+    },
+    {
+      "id": 2,
+      "name": "skarlet iohanson2"
+    },
+    {
+      "id": 3,
+      "name": "skarlet iohanson3"
+    },
+    {
+      "id": 4,
+      "name": "skarlet iohanson4"
+    }
+  ],
+  "tags": [
+    "зарубежное",
+    "космос"
+  ]
+}

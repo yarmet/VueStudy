@@ -8,6 +8,10 @@
         <span class="badge badge-light" v-bind:key="tag" v-for="tag in item.tags"
               @click="onTagClicked(tag)">#{{tag}}</span>
       </p>
+      <div>
+        <router-link class="btn btn-link" :to="'/films/${item.id}'">Подробнее</router-link>
+      </div>
+
     </div>
   </div>
 </template>
